@@ -15,14 +15,22 @@ list  里面一般是integer
 
       2. 从integer 转 list：
          一般有一步先到string
-         temp = sum([int(x) for x in p])
-            # 39 - integer
-         new = [int(x) for x in str(temp)]
+         num = 123
+         res = [int(x) for x in str(num)] --    int list
             # 先把转成string再转成integer，再放进list里面
-            # new = [3，9]
+            # new = [1,2,3]
+            
+         L = [str(x) for x in str(x)]     --    str list
+         // ['1', '2', '3']
             
       3. 从integer到 string
       4. 从list到int
+          
+          s = [str(i) for i in list]
+     
+          # Join list items using join()
+          res = int("".join(s))
+            
       5. 从list到string
 
 
